@@ -9,6 +9,10 @@ body {
 	border: dashed black;
 }
 
+.logo:active {
+	border: solid;
+}
+
 #search-output {
 	height: 10px;
 }

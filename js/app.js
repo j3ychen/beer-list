@@ -5,34 +5,33 @@ app.config(function($routeProvider) {
     .when("/", {
         templateUrl : "main.html"
     })
+    .when("/search", {
+        templateUrl : "search.html"
+    })
     .when("/deschutes", {
-        templateUrl : "deschutes.html",
-        controller: "myCtrl"
+        templateUrl : "deschutes.html"
     })
     .when("/pabst", {
-        templateUrl : "pabst.html",
-        controller: "myCtrl"
+        templateUrl : "pabst.html"
     })
     .when("/rogue", {
-        templateUrl : "rogue.html",
-        controller: "myCtrl"
+        templateUrl : "rogue.html"
     })
     .when("/slyfox", {
-        templateUrl : "slyfox.html",
-        controller: "myCtrl"
+        templateUrl : "slyfox.html"
     });
 });
 
 app.controller("myCtrl", function ($scope) {
     $scope.beerSearch = "";
     $scope.beers = [{
-        "name": "Mirror Pond Pale Ale",
+        "name": "Deschutes Mirror Pond Pale Ale",
         "brewery": "Deschutes",
         "image": "../images/deschutes_mirrorpond.png",
         "description": "BEST PALE ALE"
     },
     {
-        "name": "Chainbreaker White IPA",
+        "name": "Deschutes Chainbreaker White IPA",
         "brewery": "Deschutes",
         "image": "../images/deschutes_chainbreaker.png",
         "description": "BEST WHITE IPA"
@@ -44,25 +43,25 @@ app.controller("myCtrl", function ($scope) {
         "description": "BEST CHEAP BEER"
     },
     {
-        "name": "Rainier Beer",
+        "name": "Pabst Rainier Beer",
         "brewery": "Pabst",
         "image": "../images/pabst_rainier.jpg",
         "description": "BEST CHEAP BEER IN THE PNW"
     },
     {
-        "name": "Dead Guy Ale",
+        "name": "Rogue Dead Guy Ale",
         "brewery": "Rogue",
         "image": "../images/rogue_deadguy.jpg",
         "description": "BEST BOCK ON THE BLOCK"
     },
     {
-        "name": "Hazelnut Brown Nectar",
+        "name": "Rogue Hazelnut Brown Nectar",
         "brewery": "Rogue",
         "image": "../images/rogue_hazelnut.jpg",
         "description": "BEST BROWN ALE"
     },
     {
-        "name": "Helles Golden Lager",
+        "name": "Sly Fox Helles Golden Lager",
         "brewery": "Sly Fox",
         "image": "../images/slyfox_helles.png",
         "description": "BEST LAGER"
