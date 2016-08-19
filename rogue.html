@@ -1,2 +1,1 @@
-<a href="#"><img class="logo" src="images/rogue_hazelnut.jpg"></a>
-<a href="#"><img class="logo" src="images/rogue_deadguy.jpg"></a>
+<a href="#" ng-repeat="beer in beers | filter: {brewery: 'Rogue'}"><img class ="logo" ng-src="{{ beer.image }}"></a>

@@ -8,3 +8,7 @@ body {
 	margin: 10px;
 	border: dashed black;
 }
+
+#search-output {
+	height: 10px;
+}

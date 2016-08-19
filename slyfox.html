@@ -1,1 +1,1 @@
-<a href="#"><img class="logo" src="images/slyfox_helles.png"></a>
+<a href="#" ng-repeat="beer in beers | filter: {brewery: 'Sly Fox'}"><img class ="logo" ng-src="{{ beer.image }}"></a>
