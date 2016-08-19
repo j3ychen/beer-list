@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Jerry's List</title>
+    <title>Jerry's Libeery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
@@ -11,16 +11,14 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
 
-<div class="logo"><p><a href="#/">Main</a></p></div>
+<h1 id="top"><a href="#/">Jerry's Li<span>beer</span>y</a></h1>
 
 <a href="#deschutes"><img class="logo" src="images/deschutes.png"></a>
 <a href="#pabst"><img class="logo" src="images/pabst.jpg"></a>
 <a href="#rogue"><img class="logo" src="images/rogue.jpg"></a>
 <a href="#slyfox"><img class="logo" src="images/slyfox.jpg"></a>
 <br/>
-<div>
 <form><input type="text" ng-model="beerSearch" placeholder="Search Beer"><p id="search-output">{{ beerSearch }} </p></form>
-</div>
 
 <div ng-view></div>
 

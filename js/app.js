@@ -43,7 +43,7 @@ app.controller("myCtrl", function ($scope) {
         "description": "BEST CHEAP BEER"
     },
     {
-        "name": "Pabst Rainier Beer",
+        "name": "Pabst Rainier Beer PBR",
         "brewery": "Pabst",
         "image": "../images/pabst_rainier.jpg",
         "description": "BEST CHEAP BEER IN THE PNW"

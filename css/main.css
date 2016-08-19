@@ -1,5 +1,12 @@
 body {
+	margin: 20px;
 	background: beige;
+	font-family: georgia;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .logo {
@@ -11,6 +18,14 @@ body {
 
 .logo:active {
 	border: solid;
+}
+
+#top {
+	color: #695800;
+}
+
+#top span {
+	color: #b09400;
 }
 
 #search-output {
