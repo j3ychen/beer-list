@@ -102,6 +102,7 @@ app.controller("myCtrl", function ($scope, $location) {
         }
     };
     $scope.displaySearch = function(text) {
+        $scope.lastClick = "main";
         if (text.length) {
             //display search view
             return $location.path("/search");
@@ -109,5 +110,5 @@ app.controller("myCtrl", function ($scope, $location) {
         //display default
         return $location.path("/main");
     };
-    $scope.lastClick = "";
+    $scope.lastClick = "main";
 });
