@@ -12,15 +12,14 @@
 <body ng-app="myApp" ng-controller="myCtrl">
 
 <h1 id="top"><a href="#/">Jerry's Li<span>beer</span>y</a></h1>
-<a ui-sref="deschutes"><img class="logo" src="images/deschutes.png"></a>
-<a ui-sref="pabst"><img class="logo" src="images/pabst.jpg"></a>
-<a ui-sref="rogue"><img class="logo" src="images/rogue.jpg"></a>
-<a ui-sref="slyfox"><img class="logo" src="images/slyfox.jpg"></a>
+<a ui-sref="deschutes"><img ng-click="lastClick='deschutes'" class="logo" src="images/deschutes.png"></a>
+<a ui-sref="pabst"><img ng-click="lastClick='pabst'" class="logo" src="images/pabst.jpg"></a>
+<a ui-sref="rogue"><img ng-click="lastClick='rogue'" class="logo" src="images/rogue.jpg"></a>
+<a ui-sref="slyfox"><img ng-click="lastClick='slyfox'" class="logo" src="images/slyfox.jpg"></a>
 <br/>
 <form><input type="text" ng-change="displaySearch(beerSearch)" ng-model="beerSearch" placeholder="Search Beer"><p id="search-output">{{ beerSearch }} </p></form>
 
 <div ui-view></div>
-<p>Description goes here. Use Angular to link this to last click event (either brewery or beer description).</p>
 
 </body>
 </html>
