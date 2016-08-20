@@ -1,25 +1,32 @@
-var app = angular.module("myApp", ["ngRoute"]);
+var app = angular.module("myApp", ["ui.router"]);
 
-app.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "main.html"
-    })
-    .when("/search", {
-        templateUrl : "search.html"
-    })
-    .when("/deschutes", {
-        templateUrl : "deschutes.html"
-    })
-    .when("/pabst", {
-        templateUrl : "pabst.html"
-    })
-    .when("/rogue", {
-        templateUrl : "rogue.html"
-    })
-    .when("/slyfox", {
-        templateUrl : "slyfox.html"
-    });
+app.config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise("/main");
+    $stateProvider
+        .state('main', {
+        url: "/main",
+        templateUrl: "main.html"
+        })
+        .state('search', {
+            url: "/search",
+            templateUrl: "search.html"
+        })
+        .state('deschutes', {
+            url: "/deschutes",
+            templateUrl: "deschutes.html"
+        })
+        .state('pabst', {
+            url: "/pabst",
+            templateUrl: "pabst.html"
+        })
+        .state('rogue', {
+            url: "/rogue",
+            templateUrl: "rogue.html"
+        })
+        .state('slyfox', {
+            url: "/slyfox",
+            templateUrl: "slyfox.html"
+        });
 });
 
 app.controller("myCtrl", function ($scope) {
@@ -66,4 +73,13 @@ app.controller("myCtrl", function ($scope) {
         "image": "../images/slyfox_helles.png",
         "description": "BEST LAGER"
     }];
+    $scope.displaySearch = function(text) {
+        if (text.length) {
+            //display search view
+            return $location.path("/search");
+        }
+        //display default
+        return $location.path("/main");
+    };
+    $scope.description = "";
 });
