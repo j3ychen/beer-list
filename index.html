@@ -11,7 +11,7 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
 
-<h1 id="top"><a href="#/">Jerry's Li<span>beer</span>y</a></h1>
+<h1 id="top"><a ui-sref="main" ng-click="lastClick='main'">Jerry's Li<span>beer</span>y</a></h1>
 <a ui-sref="deschutes"><img ng-click="lastClick='deschutes'" class="logo" src="images/deschutes.png"></a>
 <a ui-sref="pabst"><img ng-click="lastClick='pabst'" class="logo" src="images/pabst.jpg"></a>
 <a ui-sref="rogue"><img ng-click="lastClick='rogue'" class="logo" src="images/rogue.jpg"></a>
