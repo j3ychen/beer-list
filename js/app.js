@@ -4,8 +4,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/main");
     $stateProvider
         .state('main', {
-        url: "/main",
-        templateUrl: "main.html"
+            url: "/main",
+            templateUrl: "main.html"
         })
         .state('deschutes', {
             url: "/deschutes",
@@ -73,7 +73,7 @@ app.controller("myCtrl", function ($scope, $location) {
     }];
     $scope.descriptions = {
         "main": {
-            "title": "Click on a brewery to see a list of its beers\nor type in the name of a beer in the search bar."
+            "title": "Click on a brewery to see a list of its beers or type in the name of a beer in the search bar."
         },
         "deschutes": {
             "title": "Deschutes Brewery",
