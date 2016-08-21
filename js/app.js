@@ -35,43 +35,43 @@ app.controller("myCtrl", function ($scope, $location) {
         "name": "mirrorpond",
         "keywords": "Deschutes Mirror Pond Pale Ale",
         "brewery": "Deschutes",
-        "image": "../images/deschutes_mirrorpond.png"
+        "image": "images/deschutes_mirrorpond.png"
     },
     {
         "name": "chainbreaker",
         "keywords": "Deschutes Chainbreaker White IPA",
         "brewery": "Deschutes",
-        "image": "../images/deschutes_chainbreaker.png"
+        "image": "images/deschutes_chainbreaker.png"
     },
     {
         "keywords": "Pabst Blue Ribbon PBR",
         "brewery": "Pabst",
-        "image": "../images/pabst_pbr.jpg"
+        "image": "images/pabst_pbr.jpg"
     },
     {
         "keywords": "Pabst Rainier Beer",
         "brewery": "Pabst",
-        "image": "../images/pabst_rainier.jpg"
+        "image": "images/pabst_rainier.jpg"
     },
     {
         "keywords": "Rogue Dead Guy Ale",
         "brewery": "Rogue",
-        "image": "../images/rogue_deadguy.jpg"
+        "image": "images/rogue_deadguy.jpg"
     },
     {
         "keywords": "Rogue Hazelnut Brown Nectar",
         "brewery": "Rogue",
-        "image": "../images/rogue_hazelnut.jpg"
+        "image": "images/rogue_hazelnut.jpg"
     },
     {
         "keywords": "Sly Fox Helles Golden Lager",
         "brewery": "Sly Fox",
-        "image": "../images/slyfox_helles.png"
+        "image": "images/slyfox_helles.png"
     },
     {
         "keywords": "Starr Hill The Love",
         "brewery": "Starr Hill",
-        "image": "../images/starrhill_love.jpg"
+        "image": "images/starrhill_love.jpg"
     }];
     $scope.descriptions = {
         "main": {
