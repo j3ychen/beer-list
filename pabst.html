@@ -1,4 +1,5 @@
-<a ui-sref="." ng-repeat="beer in beers | filter: {brewery: 'Pabst'}"><img class ="logo" ng-src="{{ beer.image }}"></a>
+<a ui-sref="."><img class="logo" ng-click="lastClick='pbr'" ng-src="images/pabst_pbr.jpg"></a>
+<a ui-sref="."><img class="logo" ng-click="lastClick='rainier'" ng-src="images/pabst_rainier.jpg"></a>
 <h1>{{ descriptions[lastClick].title }}</h1>
 <h2>{{ descriptions[lastClick].subtitle }}</h2>
 <p>{{ descriptions[lastClick].description }}</p>

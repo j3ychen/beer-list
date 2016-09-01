@@ -44,31 +44,37 @@ app.controller("myCtrl", function ($scope, $location) {
         "image": "images/deschutes_chainbreaker.png"
     },
     {
+        "name": "pbr",
         "keywords": "Pabst Blue Ribbon PBR",
         "brewery": "Pabst",
         "image": "images/pabst_pbr.jpg"
     },
     {
+        "name": "rainier",
         "keywords": "Pabst Rainier Beer",
         "brewery": "Pabst",
         "image": "images/pabst_rainier.jpg"
     },
     {
+        "name": "deadguy",
         "keywords": "Rogue Dead Guy Ale",
         "brewery": "Rogue",
         "image": "images/rogue_deadguy.jpg"
     },
     {
+        "name": "hazelnut",
         "keywords": "Rogue Hazelnut Brown Nectar",
         "brewery": "Rogue",
         "image": "images/rogue_hazelnut.jpg"
     },
     {
+        "name": "helles",
         "keywords": "Sly Fox Helles Golden Lager",
         "brewery": "Sly Fox",
         "image": "images/slyfox_helles.png"
     },
     {
+        "name": "love",
         "keywords": "Starr Hill The Love",
         "brewery": "Starr Hill",
         "image": "images/starrhill_love.jpg"
@@ -101,6 +107,46 @@ app.controller("myCtrl", function ($scope, $location) {
             "title": "Starr Hill Brewery",
             "subtitle": "Crozet, Virginia",
             "description": "Starr Hill was founded in Charlottesville in 1999. The Love is what drove me to craft beer back in my college days. The kids in the Ville love to say ignorant things like, \"It's not even that great.\" Don't listen to them; it's great."
+        },
+        "mirrorpond": {
+            "title": "Mirror Pond Pale Ale",
+            "subtitle": "Deschutes Brewery",
+            "description": "Mirror Pond."
+        },
+        "chainbreaker": {
+            "title": "Chainbreaker White IPA",
+            "subtitle": "Deschutes Brewery",
+            "description": "Chainbreaker."
+        },
+        "pbr": {
+            "title": "Pabst Blue Ribbon",
+            "subtitle": "Pabst Brewing Co.",
+            "description": "Pabst Blue Ribbon, or PBR, is a great cheap beer, arguably the best of them all."
+        },
+        "rainier": {
+            "title": "Rainier Beer",
+            "subtitle": "Pabst Brewing Co.",
+            "description": "Rainier."
+        },
+        "deadguy": {
+            "title": "Dead Guy Ale",
+            "subtitle": "Rogue Ales",
+            "description": "Dead Guy."
+        },
+        "hazelnut": {
+            "title": "Hazelnut Brown Nectar",
+            "subtitle": "Rogue Ales",
+            "description": "Hazelnut."
+        },
+        "helles": {
+            "title": "Helles Golden Lager",
+            "subtitle": "Sly Fox Brewery",
+            "description": "Helles."
+        },
+        "love": {
+            "title": "The Love",
+            "subtitle": "Starr Hill Brewery",
+            "description": "The Love."
         }
     };
     $scope.displaySearch = function(text) {
