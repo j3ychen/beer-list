@@ -111,12 +111,12 @@ app.controller("myCtrl", function ($scope, $location) {
         "mirrorpond": {
             "title": "Mirror Pond Pale Ale",
             "subtitle": "Deschutes Brewery",
-            "description": "Mirror Pond."
+            "description": "[More to come]"
         },
         "chainbreaker": {
             "title": "Chainbreaker White IPA",
             "subtitle": "Deschutes Brewery",
-            "description": "Chainbreaker."
+            "description": "[More to come]"
         },
         "pbr": {
             "title": "Pabst Blue Ribbon",
@@ -126,27 +126,27 @@ app.controller("myCtrl", function ($scope, $location) {
         "rainier": {
             "title": "Rainier Beer",
             "subtitle": "Pabst Brewing Co.",
-            "description": "Rainier."
+            "description": "[More to come]"
         },
         "deadguy": {
             "title": "Dead Guy Ale",
             "subtitle": "Rogue Ales",
-            "description": "Dead Guy."
+            "description": "[More to come]"
         },
         "hazelnut": {
             "title": "Hazelnut Brown Nectar",
             "subtitle": "Rogue Ales",
-            "description": "Hazelnut."
+            "description": "[More to come]"
         },
         "helles": {
             "title": "Helles Golden Lager",
             "subtitle": "Sly Fox Brewery",
-            "description": "Helles."
+            "description": "[More to come]"
         },
         "love": {
             "title": "The Love",
             "subtitle": "Starr Hill Brewery",
-            "description": "The Love."
+            "description": "[More to come]"
         }
     };
     $scope.displaySearch = function(text) {
