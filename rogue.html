@@ -1,4 +1,5 @@
 <a ui-sref="." ng-repeat="beer in beers | filter: {brewery: 'Rogue'}"><img class ="logo" ng-click="$parent.lastClick=beer.name" ng-src="{{ beer.image }}"></a>
+<hr>
 <h1>{{ descriptions[lastClick].title }}</h1>
 <h2>{{ descriptions[lastClick].subtitle }}</h2>
 <p>{{ descriptions[lastClick].description }}</p>
