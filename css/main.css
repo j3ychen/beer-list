@@ -9,10 +9,18 @@ a {
 	color: inherit;
 }
 
+h1 {
+	display: inline;
+}
+
+form {
+	display: inline;
+}
+
 .logo {
 	width: 100px;
 	height: 100px;
-	margin: 0px 10px 0px 10px;
+	margin: 5px;
 	border: dashed black;
 }
 
@@ -26,8 +34,4 @@ a {
 
 #top span {
 	color: #b09400;
-}
-
-#search-output {
-	height: 10px;
 }

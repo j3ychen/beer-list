@@ -11,15 +11,15 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
 
-<h1 id="top"><a ui-sref="main" ng-click="lastClick='main'">Jerry's Li<span>beer</span>y</a></h1>
+<h1 id="top"><a ui-sref="main" ng-click="lastClick='main'">Jerry's Li<span>beer</span>y</a>  </h1>
+<form><input type="text" ng-change="displaySearch(beerSearch)" ng-model="beerSearch" placeholder="Search Beer"></form><hr>
 <a ui-sref="deschutes"><img ng-click="lastClick='deschutes'" class="logo" src="images/deschutes.png"></a>
 <a ui-sref="pabst"><img ng-click="lastClick='pabst'" class="logo" src="images/pabst.jpg"></a>
 <a ui-sref="rogue"><img ng-click="lastClick='rogue'" class="logo" src="images/rogue.jpg"></a>
 <a ui-sref="slyfox"><img ng-click="lastClick='slyfox'" class="logo" src="images/slyfox.jpg"></a>
 <a ui-sref="starrhill"><img ng-click="lastClick='starrhill'" class="logo" src="images/starrhill.jpg"></a>
-<br/>
-<form><input type="text" ng-change="displaySearch(beerSearch)" ng-model="beerSearch" placeholder="Search Beer"><p id="search-output">{{ beerSearch }} </p></form>
-
+<a ui-sref="yuengling"><img ng-click="lastClick='yuengling'" class="logo" src="images/yuengling.png"></a>
+<hr>
 <div ui-view></div>
 </body>
 </html>

@@ -26,6 +26,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('starrhill', {
             url: "/starrhill",
             templateUrl: "starrhill.html"
+        })
+        .state('yuengling', {
+            url: "/yuengling",
+            templateUrl: "yuengling.html"
         });
 });
 
@@ -78,6 +82,12 @@ app.controller("myCtrl", function ($scope, $location) {
         "keywords": "Starr Hill The Love",
         "brewery": "Starr Hill",
         "image": "images/starrhill_love.jpg"
+    },
+    {
+        "name": "yuenglinglager",
+        "keywords": "Yuengling Traditional Lager",
+        "brewery": "Yuengling",
+        "image": "images/yuengling_lager.jpg"
     }];
     $scope.descriptions = {
         "main": {
@@ -108,25 +118,30 @@ app.controller("myCtrl", function ($scope, $location) {
             "subtitle": "Crozet, Virginia",
             "description": "Starr Hill was founded in Charlottesville in 1999. The Love is what drove me to craft beer back in my college days. The kids in the Ville love to say ignorant things like, \"It's not even that great.\" Don't listen to them; it's great."
         },
+        "yuengling": {
+            "title": "D. G. Yuengling & Son",
+            "subtitle": "Pottsville, Pennsylvania",
+            "description": "Yuengling claims to be America's oldest brewery. It is located in Pottsville, Pennsylvania, which is a small, historic, and interesting town. Established in 1829, it has remained a family-owned brewery."
+        },
         "mirrorpond": {
             "title": "Mirror Pond Pale Ale",
             "subtitle": "Deschutes Brewery",
-            "description": "[More to come]"
+            "description": "Cascade hops and pale malt - it's the classic Northwest pale ale."
         },
         "chainbreaker": {
             "title": "Chainbreaker White IPA",
             "subtitle": "Deschutes Brewery",
-            "description": "[More to come]"
+            "description": "It's a \"wit beer with enough IBUs to warrant the IPA name.\" It's always quite the experience to be able to taste the Belgian & the citrus but also the Cascade & the Centennial."
         },
         "pbr": {
             "title": "Pabst Blue Ribbon",
             "subtitle": "Pabst Brewing Co.",
-            "description": "Pabst Blue Ribbon, or PBR, is a great cheap beer, arguably the best of them all."
+            "description": "Pabst Blue Ribbon, or PBR, is a great cheap beer, arguably the best of them all. It is possibly my most checked-in beer on Untappd: five-star rating every single time."
         },
         "rainier": {
             "title": "Rainier Beer",
             "subtitle": "Pabst Brewing Co.",
-            "description": "[More to come]"
+            "description": "Before moving to Seattle, I had never heard of this hidden gem. Now it has become an integral part of my Seattle experience. There is just something magical about a beer locally brewed in California with Yakima Valley hops. Mountain fresh, dude."
         },
         "deadguy": {
             "title": "Dead Guy Ale",
@@ -147,6 +162,11 @@ app.controller("myCtrl", function ($scope, $location) {
             "title": "The Love",
             "subtitle": "Starr Hill Brewery",
             "description": "[More to come]"
+        },
+        "yuenglinglager": {
+            "title": "Yuengling Traditional Lager",
+            "subtitle": "D. G. Yuengling & Son",
+            "description": "Yuengling Lager is one of those beers that, if you knew about them, you assumed would be everywhere. Sadly, it is only popular in the Mid-Atlantic region and distributed on the East Coast."
         }
     };
     $scope.displaySearch = function(text) {
